@@ -1,3 +1,10 @@
+// Função para iniciar o jogo a partir do menu
+function iniciarJogo() {
+  document.getElementById("menu").style.display = "none";
+  document.getElementById("jogo").style.display = "block";
+}
+
+// Listas de 100 itens
 const temas = {};
 ["Filmes mais assistidos", "Músicas mais ouvidas", "Times mais valiosos", "Jogos mais vendidos", "Carros mais rápidos"].forEach((tema) => {
   temas[tema] = [];
@@ -86,4 +93,3 @@ function mostrarVencedor(vencedor) {
   const winnerBox = document.querySelector(`.player${vencedor}`);
   winnerBox.classList.add("vencedor");
 }
-
