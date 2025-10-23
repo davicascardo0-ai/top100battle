@@ -1,9 +1,39 @@
 body {
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   font-family: 'Arial', sans-serif;
-  color: #fff;
   margin: 0;
   padding: 0;
+  background: #f5f5f5;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6dd5fa, #ffffff);
+}
+
+.menu button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu button:hover {
+  background-color: #2980b9;
 }
 
 .container {
@@ -11,13 +41,6 @@ body {
   margin: auto;
   padding: 20px;
   text-align: center;
-}
-
-h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  color: #f39c12;
-  text-shadow: 2px 2px #000;
 }
 
 .tema-section, .jogo-section {
@@ -28,7 +51,7 @@ input {
   padding: 10px;
   width: 250px;
   border-radius: 8px;
-  border: none;
+  border: 1px solid #ccc;
   font-size: 1em;
   outline: none;
 }
@@ -37,7 +60,7 @@ button {
   padding: 10px 20px;
   border: none;
   border-radius: 8px;
-  background-color: #f39c12;
+  background-color: #3498db;
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -46,7 +69,7 @@ button {
 }
 
 button:hover {
-  background-color: #e67e22;
+  background-color: #2980b9;
 }
 
 .placar {
@@ -56,17 +79,17 @@ button:hover {
 }
 
 .player {
-  background: rgba(0,0,0,0.4);
+  background: #ecf0f1;
   padding: 15px 30px;
   border-radius: 10px;
   width: 45%;
-  box-shadow: 2px 2px 10px #000;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
   position: relative;
   transition: 0.5s;
 }
 
 .player.vencedor {
-  box-shadow: 0 0 30px 10px gold;
+  box-shadow: 0 0 20px 5px gold;
   animation: pulse 1s infinite;
 }
 
