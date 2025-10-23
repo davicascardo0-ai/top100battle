@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top 100 Battle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎮 Top 100 Battle</h1>
+  <p id="tema">Tema atual: </p>
+  
+  <div>
+    <p><strong>Jogador <span id="jogador">1</span></strong>, digite seu palpite:</p>
+    <input type="text" id="resposta" placeholder="Digite aqui...">
+    <button onclick="enviarResposta()">Enviar</button>
+  </div>
+
+  <p id="resultado"></p>
+  <p>Pontuação → Jogador 1: <span id="p1">0</span> | Jogador 2: <span id="p2">0</span></p>
+  <button onclick="proximoTema()">Próximo Tema</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
