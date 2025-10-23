@@ -30,6 +30,7 @@ input {
   border-radius: 8px;
   border: none;
   font-size: 1em;
+  outline: none;
 }
 
 button {
@@ -60,19 +61,28 @@ button:hover {
   border-radius: 10px;
   width: 45%;
   box-shadow: 2px 2px 10px #000;
+  position: relative;
+  transition: 0.5s;
 }
 
-.player1 h3 {
-  color: #3498db;
+.player.vencedor {
+  box-shadow: 0 0 30px 10px gold;
+  animation: pulse 1s infinite;
 }
 
-.player2 h3 {
-  color: #e74c3c;
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }
+
+.player1 h3 { color: #3498db; }
+.player2 h3 { color: #e74c3c; }
 
 .player p {
   font-size: 2em;
   margin: 0;
+  transition: 0.5s;
 }
 
 .resultado {
@@ -81,5 +91,6 @@ button:hover {
   min-height: 50px;
   line-height: 1.4em;
   white-space: pre-line;
+  transition: all 0.5s;
 }
 
