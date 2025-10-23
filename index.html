@@ -7,13 +7,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+  <div class="menu" id="menu">
     <h1>🎮 Top 100 Battle</h1>
+    <button onclick="iniciarJogo()">Começar</button>
+    <p>Escolha o tema depois no jogo</p>
+  </div>
 
+  <div class="container" id="jogo" style="display:none;">
     <div class="tema-section">
       <label for="temaSelect">Escolha o tema:</label>
       <select id="temaSelect"></select>
-      <button onclick="escolherTema()">Escolher Tema</button>
+      <button onclick="escolherTema()">Confirmar Tema</button>
       <p id="temaAtual">Tema atual: Nenhum</p>
     </div>
 
